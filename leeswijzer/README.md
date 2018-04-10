@@ -99,3 +99,52 @@ p.134, speciale tekens: doorlezen.
 * hele hoofdstuk: ter kennisname
 
 ## JavaScript
+
+### Hoofdstuk 1 - Kennismaken
+* Geschiedenis en rol van JavaScript begrijpen.
+* p.13-20 - voorbeelden begrijpen.
+* p.27 - praktijkoefeningen - maken. 
+
+### Hoofdstuk 2 - Statements en meer
+* p.35, variabelen: goed lezen en begrijpen.
+* p.39, gegevenstypen: doorlezen.
+* p.41-50, boolean, strings, numbers: goed begrijpen.
+
+### Hoofdstuk 3 - Operatoren
+* p.54, typen operatoren kennen.
+* p.55-62, voorbeelden operatoren doornemen.
+* p.62, operator `?...: ` ter kennisname.
+* p.68, haakjes: kennen.
+
+### Hoofdstuk 4 - functies
+* Hele hoofdstuk: SUPER belangrijk.
+* Onderdeel `functies`: kennen: definitie, invoking, parameters, anonieme functies.
+* Onderdeel `Arrays`: kennen: indexnotatie, elementen opvragen, elementen toevoegen.
+* kennen: arrayfuncties zoals .pop(), .push(), .sort() etc.
+* Onderdeel `Objecten`: kennen: notatie, accolades, dubbele punt, komma's. Waarden van objecten uitlezen.
+
+### Hoofdstuk 5 - Program flow
+* p.104, `if-else`, goed kennen.
+* p.109, `while`, minder belangrijk. Globaal doorlezen.
+* p.111, `for`, goed kennen.
+* p.118, praktijkoefeningen: goede cases om mee te oefenen.
+
+### Hoofdstuk 6 - Events en -Handlers
+* p.122, theorie achter events en callbacks kennen. 
+* p.125-137, event handlers: doorlezen en voorbeelden snappen.
+* p.137, klikken op knop afvangen: begrijpen wat er gebeurt.
+* p.140-150 overige events: begrijpen wat er gebeurt.
+
+### Hoofdstuk 7 - Werken met DOM
+* p.152 - theorie achter DOM begrijpen.
+* p.155-164, elementen in het DOM selecteren: erg belangrijk. Goed snappen.
+* p.164-174, minder belangrijk. Doorlezen.
+
+### Hoofdstuk 8 - Gevorderde functies
+* Hele hoofdstuk: ter kennisname. Komt in de training waarschijnlijk minder aan de orde.
+
+### Hoofdstuk 9 - Modulair programmeren 
+* Hele hoofdstuk: ter kennisname. Komt in de training waarschijnlijk minder aan de orde.
+
+Vragen, op- en aanmerkingen welkom: Peter Kassenaar, info@kassenaar.com
+
