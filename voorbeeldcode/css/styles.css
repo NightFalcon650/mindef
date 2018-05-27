@@ -1,0 +1,97 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: rgba(137, 43, 226, 0.086);
+	color: rgba(0, 0, 0, 0.703);
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+#container {
+	padding-left: 100px;
+}
+
+h1 {
+	font-size: 160%;
+}
+
+img {
+	max-width: 200px;
+}
+/* Classes geef je aan met een punt aan het begin */
+
+.plaatje2 {
+	max-width: 400px;
+	border: 1px solid red;
+}
+
+.groen {
+	background-color: green;
+}
+
+.grijs {
+	background-color: grey;
+}
+
+.minder {
+	font-size: smaller;
+}
+/* Deze regel is op *alle* elementen van toepassing,
+want er staan komma's tussen */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Courier New', Courier, monospace;
+}
+/* Algemene regel voor alle hyperlinks */
+a {
+	text-decoration: none;
+}
+
+/* Specifieke regel, alleen voor het menu */
+/* Aangegeven met id="navbar" */
+
+#navbar ul li {
+	display: inline;
+}
+
+#navbar ul li a {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(77, 128, 0);
+	font-size: 20px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid red;
+}
+#navbar ul li a:hover {
+	color: black;
+	background-color: whitesmoke;
+}
+a:hover {
+	text-decoration: underline;
+	color: #bada55;
+}
+/* Regel 1 */
+@media screen and (max-width: 480px) {
+	body {
+		background-color: rgba(144, 238, 144, 0.404);
+	}
+	img.image_container {
+		max-width: 100%;
+	}
+}
+/* Media regel 2 */
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+	body {
+		background-color: rgb(73, 40, 219);
+	}
+	img.image_container {
+		max-width: 33.33%;
+	}
+}

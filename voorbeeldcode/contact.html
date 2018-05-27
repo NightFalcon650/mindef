@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Voorbeeld Box Model</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            background-color: beige;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px;
+            /* "Shorthand notation" */
+            margin: 10px 100px 30px 0;
+
+        }
+
+        .box2 {
+
+            width: 200px;
+            background-color: rgb(22, 19, 173);
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .box2 img {
+            max-width: 100%;
+        }
+
+        .negativeText {
+            color: white;
+            margin-top: -30px;
+        }
+
+        .active {
+            background-color: lightgray;
+            border-left: 5px dashed red;
+            border-bottom: 5px dashed rgba(255, 0, 0, 0.26);
+            padding: 10px;
+        }
+
+        div {
+            display: block;
+        }
+
+        img {
+            display: block;
+            max-width: 200px;
+            padding: 10px;
+            padding-bottom: 30px;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            box-shadow: -5px 5px 5px #999;
+        }
+
+        img:hover {
+            box-shadow: 5px 5px 5px #999;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Voorbeeld Box Model</h1>
+
+    <!-- Een Div is van zichzelf een box  -->
+    <img src="img/puppy.jpg" alt="">
+    <img src="img/puppy.jpg" alt="">
+    <img src="img/puppy.jpg" alt="">
+    <img src="img/puppy.jpg" alt="">
+    <img src="img/puppy.jpg" alt="">
+    <img src="img/puppy.jpg" alt="">
+</body>
+
+</html>

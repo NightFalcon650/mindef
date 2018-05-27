@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap voorbeeld</title>
+    <!-- 1. Snelle manier: via internet: -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous"> -->
+
+    <!-- 2. Manier via eigen webserver -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <!-- 1. Container -->
+    <p class=></p>
+    <div class="container">
+        <!-- 2. Eerste rij instellen -->
+        <div class="row">
+            <!-- 3. Linker kolom  -->
+            <div class="col">
+                <h1>Hello, dit is bootstrap</h1>
+                <a class="btn btn-primary" href="http://wwww.google.nl">ga naar google</a>
+            </div>
+            <!-- 4. Rechter kolom -->
+            <div class="col">
+                Dit is de inhoud van de rechter kolom
+                <h2>Mijn updates...</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat, iure molestiae nulla voluptates soluta magni ut adipisci
+                    natus libero eos repudiandae hic nostrum corrupti aspernatur odio! Distinctio, maiores sit?
+                </p>
+            </div>
+        </div>
+        <!-- 5.  Einde van de eerste rij -->
+        <!-- 6. Begin van de tweede rij, met kolommen over 12 breed -->
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Schrijf hier ALLE inhoud voor de kolom -->
+                <div style="background-color: gold; height: 100px; border: 1px solid rebeccapurple">
+                    Dit is de tweede rij met de linker kolom
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background-color: rgb(0, 255, 98); height: 100px;">
+                    Dit is de tweede rij en de middelste kolom
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background-color: rgb(98, 0, 255); height: 100px;">
+                    Dit is de tweede rij en de rechter kolom
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <h2>Dit is de tweede container</h2>
+
+    <div class="container">
+
+    </div>
+
+</body>
+
+</html>
