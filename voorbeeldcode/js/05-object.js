@@ -15,6 +15,7 @@ var fruitObject = {
 		return 'Ik ben een: ' + this.naam;
 	}
 };
+console.log(fruitObject.naam); // Appel
 document.getElementById('divResult').innerHTML = fruitObject.toonNaam();
 
 // Voorbeeld 2:
