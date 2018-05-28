@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
     <h1>JavaScript Objecten</h1>
     <h1 id="divResult"></h1>
     <h2>Klanten en werknemers</h2>
-    <button>Laat klanten zien</button>
+    <button onclick="toonKlanten()" class="btn btn-primary">Laat klanten zien</button>
+    <button onclick="verbergKlanten()" class="btn btn-primary">Verberg Klanten</button>
     <ul id="lijstKlanten">
-
+        <!-- Hier komen dynamisch de klantgegevens -->
     </ul>
+
     <script src="js/ojbect.js"></script>
 </body>
 

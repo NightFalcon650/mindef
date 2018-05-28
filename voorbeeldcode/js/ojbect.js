@@ -17,8 +17,9 @@ var fruitObject = {
 };
 document.getElementById('divResult').innerHTML = fruitObject.toonNaam();
 
+// Voorbeeld 2:
 // Een array met klantgegevens.
-// Elke klant is een object
+// Elke klant is een object:
 var klanten = [
 	{ naam: 'Facebook', werknemers: 20000 },
 	{ naam: 'Google', werknemers: 35000 },
@@ -26,15 +27,22 @@ var klanten = [
 	{ naam: 'MinDef', werknemers: 12000 },
 	{ naam: 'BuZa', werknemers: 6000 }
 ];
-// Klantgegevens tonen in de User Interface
+function toonKlanten() {
+	document.getElementById('lijstKlanten').innerHTML = '';
+	document.getElementById('lijstKlanten').style.display = 'block';
+	// Klantgegevens tonen in de User Interface
+	for (var i = 0; i < klanten.length; i++) {
+		// Hier, binnen de lus, een nieuw ListItem samenstellen
+		var listItem =
+			'<li>' +
+			klanten[i].naam +
+			', werknemers:' +
+			klanten[i].werknemers +
+			'</li>';
+		document.getElementById('lijstKlanten').innerHTML += listItem;
+	}
+}
 
-for (var i = 0; i < klanten.length; i++) {
-	// Hier, binnen de lus, een nieuw ListItem samenstellen
-	var listItem =
-		'<li>' +
-		klanten[i].naam +
-		', werknemers:' +
-		klanten[i].werknemers +
-		'</li>';
-	document.getElementById('lijstKlanten').innerHTML += listItem;
+function verbergKlanten() {
+	document.getElementById('lijstKlanten').style.display = 'none';
 }
