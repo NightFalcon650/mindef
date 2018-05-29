@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulieren in HTML</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Werken met formulieren</h2>
+        <form action="https://www.kassenaar.com/hcj/testform.asp" method="post">
+
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" placeholder="Naam">
+            <br>
+            <label for="email"> E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <br>
+            <label for="leeftijd"> leeftijd:</label>
+            <input type="number" id="leeftijd" name="leeftijd" placeholder="Leeftijd">
+            <p> geslacht :</p>
+            <input type="radio" id="radioMan" name="geslacht" value="man">
+            <label for="radioMan"> Mannelijk</label>
+            <br>
+            <input type="radio" id="radioVrouw" name="geslacht" value="vrouw">
+            <label for="radioVrouw">
+                vrouwelijk
+            </label>
+            <br>
+            <input type="radio" id="radioOnbekend" name="geslacht" value="weetniet">
+            <label for="radioOnbekend"> weet niet</label>
+            <br>
+            <input type="submit" value="Formulier verzenden">
+            <input type="reset" value="Formulier leegmaken">
+
+
+        </form>
+
+
+    </div>
+
+    <!-- Hieronder alle scripts -->
+    <!-- https://www.kassenaar.com/hcj/testform.asp -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/09-formulier.js"></script>
+</body>
+
+</html>
