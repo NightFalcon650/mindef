@@ -5,9 +5,9 @@
 $('#divResult').html('Hallo, dit is jQuery - vanuit script');
 
 // Aanhaken van click-event voor de knop met id="btnToonMessage"
-$('#btnToonMessage').on('click', toonMessage);
+$('#btnToonMessage').on('click', toonNaam);
 
-function toonMessage() {
+function toonNaam() {
 	// 1. Ophalen van de Naam
 	var naam = $('#txtMessage').val();
 
