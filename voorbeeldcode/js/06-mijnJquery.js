@@ -1,31 +1,39 @@
-// mijnJquery.js
-// document.getElementById('divResult') // Ouderwets JavaScript
+$(document).ready(function() {
+	/// hier komt alle code als de pagina gereed is.
 
-// Selecteer een div via Jquery en vul de html ervan in
-$('#divResult').html('Hallo, dit is jQuery - vanuit script');
+	// mijnJquery.js
+	// document.getElementById('divResult') // Ouderwets JavaScript
 
-// Aanhaken van click-event voor de knop met id="btnToonMessage"
-$('#btnToonMessage').on('click', toonNaam);
+	// Selecteer een div via Jquery en vul de html ervan in
+	$('#divResult').html('Hallo, dit is jQuery - vanuit script');
 
-function toonNaam() {
-	// 1. Ophalen van de Naam
-	var naam = $('#txtMessage').val();
+	// Aanhaken van click-event voor de knop met id="btnToonMessage"
+	$('#btnToonMessage').on('click', toonNaam);
 
-	// 2. maken van het bericht
-	var message = 'Hallo ' + naam + ', het is mooi weer';
+	function toonNaam() {
+		// 1. Ophalen van de Naam
+		var naam = $('#txtMessage').val();
 
-	// 3. Terugschrijven van bericht naar UI
-	$('#divResult').html(message);
-}
+		// 2. maken van het bericht
+		var message = 'Hallo ' + naam + ', het is mooi weer';
 
-// functionaliteit schrijven voor de knop id="btnVerberg"
-$('#btnVerberg').on('click', verbergMessage);
-$('#btnToon').on('click', toonMessage);
+		// 3. Terugschrijven van bericht naar UI
+		$('#divResult').html(message);
+	}
 
-function verbergMessage() {
-	$('#divResult').hide();
-}
+	// functionaliteit schrijven voor de knop id="btnVerberg"
+	$('#btnVerberg').on('click', verbergMessage);
+	$('#btnToon').on('click', toonMessage);
 
-function toonMessage() {
-	$('#divResult').show();
-}
+	function verbergMessage() {
+		$('#divResult').fadeOut('slow');
+	}
+
+	function toonMessage() {
+		$('#divResult').fadeIn('slow');
+	}
+
+	// Ga de de paragraaf selecteren
+
+	jQuery('.alinea1').css('color', 'red');
+}); // end window.onload()
