@@ -7,41 +7,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulieren in HTML</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <style>
+        input[type=text],
+        input[type=email],
+        input[type=number] {
+            width: 400px;
+        }
+    </style> -->
 </head>
 
 <body>
     <div class="container">
-        <h2>Werken met formulieren</h2>
-        <form action="https://www.kassenaar.com/hcj/testform.asp" method="post">
 
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" name="naam" placeholder="Naam">
-            <br>
-            <label for="email"> E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="email">
-            <br>
-            <label for="leeftijd"> leeftijd:</label>
-            <input type="number" id="leeftijd" name="leeftijd" placeholder="Leeftijd">
-            <p> geslacht :</p>
-            <input type="radio" id="radioMan" name="geslacht" value="man">
-            <label for="radioMan"> Mannelijk</label>
-            <br>
-            <input type="radio" id="radioVrouw" name="geslacht" value="vrouw">
-            <label for="radioVrouw">
-                vrouwelijk
-            </label>
-            <br>
-            <input type="radio" id="radioOnbekend" name="geslacht" value="weetniet">
-            <label for="radioOnbekend"> weet niet</label>
-            <br>
-            <input type="submit" value="Formulier verzenden">
-            <input type="reset" value="Formulier leegmaken">
+
+
+        <h2>Werken met formulieren</h2>
+        <form action="https://www.kassenaar.com/hcj/testform.asp" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="naam">Naam:</label>
+                    <input class="form-control" required type="text" id="naam" name="naam" placeholder="Naam">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="email"> Email: </label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="email">
+
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+
+                    <label for="leeftijd">Leeftijd</label>
+                    <input class="form-control" min="12" max="99" type="number" id="leeftijd" name="leeftijd">
+
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <p> geslacht * :</p>
+                    <label for="radioMan">
+                        <input required type="radio" id="radioMan" name="geslacht" value="man"> Mannelijk
+                    </label>
+                    <label for="radioVrouw">
+                        <input required type="radio" id="radioVrouw" name="geslacht" value="vrouw"> vrouwelijk
+                    </label>
+                    <label for="radioOnbekend">
+                        <input required type="radio" id="radioOnbekend" name="geslacht" value="weetniet"> weet niet</label>
+                    <br>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="selectProvincie">Kies een provincie * </label>
+                    <select required class="form-control" name="selectProvincie" id="selectProvincie">
+                        <option selected disabled value="ONGELDIG">Maak een keuze...</option>
+                        <option value="FR">Friesland</option>
+                        <option value="GR">Groningen</option>
+                        <option value="DR">Drenthe</option>
+                        <option value="OV">Overijssel</option>
+                        <option value="FL">Flevoland</option>
+                        <option value="GLD">Gelderland</option>
+                        <option value="REST">De rest</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="txtOpmerkingen">Schrijf een review</label>
+                    <textarea class="form-control" name="txtOpmerkingen" 
+                    id="txtOpmerkingen" cols="30" rows="10" placeholder="Hier uw opmerkingen....">
+                </textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <!-- <label for="txtReadOnly">Readonly veld</label>
+                        <input type="text" class="form-control" readonly id="txtReadOnly" value="Peter Kassenaar"> -->
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-success" value="Formulier verzenden">
+            <input type="reset" class="btn btn-secondary" value="Formulier leegmaken">
 
 
         </form>
-
+        <!-- Attributen voor validatie
+            - required
+            - min="12"
+            - max
+            - minlength="3"
+            - maxlength="10"
+            - pattern 
+        -->
 
     </div>
+
+
+
 
     <!-- Hieronder alle scripts -->
     <!-- https://www.kassenaar.com/hcj/testform.asp -->
