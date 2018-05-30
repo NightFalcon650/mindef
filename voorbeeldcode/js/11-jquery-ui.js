@@ -18,4 +18,16 @@ $(document).ready(function() {
 		$('#divResult').html(gekozendatum);
 		//..... allerlei andere dingen doen met gekozendatum
 	});
+
+	///******************** Slider */
+	var sliderOptions = {
+		min: 0,
+		max: 100,
+		value: 50,
+		step: 10,
+		slide: function(event, ui) {
+			$('#sliderResult').html(ui.value);
+		}
+	};
+	$('#mySlider').slider(sliderOptions);
 });
