@@ -21,17 +21,25 @@
         <button id="getDate" class="btn btn-primary">Welke datum?</button>
         <h2 id="divResult"></h2>
         <h1>Voorbeeld van een slider</h1>
-        <h3>Geef een waardering voor deze training:</h3>
+        <h3>Hoeveel items wil je bestellen:</h3>
         <div id="mySlider"></div>
         <h2 id="sliderResult"></h2>
+        <h2>Bestelformulier</h2>
+        <form action="https://www.kassenaar.com/hcj/testform.asp" method="POST">
+            <input type="hidden" id="inputBestel" name="inputBestel" placeholder="aantal Items">
+
+            <!-- <button id="btnInstellen" class="btn btn-primary">Stel formulier in</button> -->
+            <button id="btnVerstuur" class="btn btn-primary" type="submit">Bestel!</button>
+        </form>
+
     </div>
     <!-- Scripts voor jQuery en Bootstrap -->
-    
+
     <!-- 1. jQuery core invoegen -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <!-- 2. De jquery ui plugins toevoegen -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
