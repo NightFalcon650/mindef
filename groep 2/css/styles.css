@@ -1,0 +1,64 @@
+/* Browser schakelt naar de CSS- modus */
+
+/* Dit is een CSS comment */
+/* ***************** */
+/* Opmaak voor het hoofdmenu */
+/* ***************** */
+
+/* #region body */
+body {
+	background-color: chocolate;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 24px;
+	color: aliceblue;
+}
+
+/* Overrule (of uitbreiden) de basisstijl met 
+    aanvullende kenmerken */
+h2 {
+	font-family: 'Courier New', Courier, monospace;
+	color: yellow;
+}
+
+/* #end region */
+/* ***************** */
+/* Opmaak voor de footer */
+/* ***************** */
+
+/* combinatie selector - basisstijl*/
+h1,
+h2,
+h3 {
+	text-align: center;
+	font-size: 38px;
+	/* color: #8455da; */
+}
+
+/* Navigatie menu rechts uitlijnen */
+nav {
+	text-align: right;
+}
+
+/* Deze klasse geldt alleen voor rode tekst */
+.rodeTekst {
+	background-color: yellow;
+	color: red;
+}
+
+.groeneTekst {
+	background-color: yellow;
+	color: green;
+}
+
+.vet {
+	font-weight: bold;
+}
+
+.cursief {
+	font-style: italic;
+}
+
+header {
+	text-align: center;
+	border: 1px solid black;
+}
