@@ -1,11 +1,6 @@
 /* Browser schakelt naar de CSS- modus */
 
 /* Dit is een CSS comment */
-/* ***************** */
-/* Opmaak voor het hoofdmenu */
-/* ***************** */
-
-/* #region body */
 body {
 	background-color: chocolate;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,18 +15,13 @@ h2 {
 	color: yellow;
 }
 
-/* #end region */
-/* ***************** */
-/* Opmaak voor de footer */
-/* ***************** */
-
 /* combinatie selector - basisstijl*/
 h1,
 h2,
 h3 {
 	text-align: center;
 	font-size: 38px;
-	/* color: #8455da; */
+	color: #8455da;
 }
 
 /* Navigatie menu rechts uitlijnen */
