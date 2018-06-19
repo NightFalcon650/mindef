@@ -8,6 +8,22 @@ body {
 	color: aliceblue;
 }
 
+em {
+	font-style: italic;
+}
+
+img.klein {
+	width: 200px;
+}
+img.groot {
+	width: 400px;
+	border: 1px solid black;
+}
+iframe.instructieVideo {
+	width: 460px;
+	border: 2px solid black;
+	border-radius: 20px;
+}
 /* Overrule (of uitbreiden) de basisstijl met 
     aanvullende kenmerken */
 h2 {
@@ -51,4 +67,17 @@ nav {
 header {
 	text-align: center;
 	border: 1px solid black;
+}
+
+.artikelTekst {
+	font-size: 16px;
+	line-height: 24px;
+	width: 300px;
+	border: 1px solid purple;
+}
+
+.beginKapitaal {
+	font-family: 'Times New Roman';
+	font-size: 48px;
+	font-weight: 'bold';
 }
