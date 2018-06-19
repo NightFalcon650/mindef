@@ -1,0 +1,29 @@
+/* Deze set regels is alleen voor kleine schermen (zoals
+mobiele telefoons), met een maximale breedte van 480px */
+@media screen and (max-width: 480px) {
+	body {
+		background-color: aqua;
+	}
+	.plaatje {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+/* Deze set regels is voor grotere schermen vanaf 481px */
+@media screen and (min-width: 481px) {
+	body {
+		background-color: rgb(63, 10, 107);
+		color: whitesmoke;
+	}
+	.plaatje {
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+/* Deze regel voor het image geldt *altijd*. Maar omdat hij in 
+de class 'plaatje' is opgenomen, krijgt hij altijd een breedte
+van 100% van zijn *omliggende element* */
+img {
+	max-width: 100%;
+}

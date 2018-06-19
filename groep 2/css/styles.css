@@ -80,3 +80,38 @@ ul.menu li:before {
 	background-image: url(../img/telefoon-icon.png);
 	background-repeat: no-repeat;
 }
+
+/* Hyperlinks binnen het menu een andere opmaak geven,
+maar de rest van de links in de pagina niet!
+Dit heet de context-selector */
+ul.menu li a {
+	color: white;
+	text-decoration: none;
+}
+
+ul.menu li a:hover {
+	color: black;
+	background-color: white;
+	/* text-decoration: none; */
+}
+
+.selected {
+	color: black;
+	background-color: rgb(86, 8, 175);
+}
+
+/* Stijlen voor de tabel */
+table {
+	border-collapse: collapse;
+	border: 1px solid blueviolet;
+	width: 80%;
+	background-color: gray;
+}
+th {
+	background-color: yellow;
+	color: black;
+}
+td {
+	padding: 10px;
+	border: 1px solid blueviolet;
+}
