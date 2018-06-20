@@ -12,6 +12,6 @@ console.log(leeftijd);
 document.getElementById('resultLeeftijd').innerHTML = leeftijd;
 
 // Voorbeeld: twee variabelen bij elkaar optellen.
-// var1 = 10;
-// var2 = 20;
-// alert(var1 + var2);
+var getal1 = 10;
+var getal2 = 20;
+alert(getal1 + getal2);
