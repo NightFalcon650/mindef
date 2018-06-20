@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box-model</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <style>
+        .box1 {
+            /* witruimte BINNEN het block */
+            padding: 10px;
+            /* witruimte BUITEN het block */
+            margin: 10px;
+            /* Houdt de breedte ALTIJD op de ingestelde waarde */
+            box-sizing: border-box;
+
+            border: 1px solid black;
+            /* Afwijkende Instellingen voor de rand */
+            border-width: 1px 1px 10px 10px;
+            border-left-color: blue;
+            border-bottom-color: blue;
+
+            /* Blok centreren? Gebruik de waarde voor margin */
+            /* margin : 0 auto; */
+            /* Hoogte en breedte instellen */
+            width: 200px;
+            height: 200px;
+
+            /* Een paar kleuren om de box duidelijk zichtbaar te maken */
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Voorbeeld van CSS box model</h1>
+    <p>Kijk in de CSS voor eigenschappen voor margin, padding en border.</p>
+    <div class="box1">
+        Tekst in de box
+    </div>
+    <div class="box1">
+        Tekst in de box
+    </div>
+    <div class="box1">
+        Tekst in de box
+    </div>
+    <div class="box1">
+        Tekst in de box
+    </div>
+    <div class="box1">
+        Tekst in de box
+    </div>
+</body>
+
+</html>
