@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap voorbeeld</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .groen {
+            background-color: lightgreen;
+        }
+
+        .rood {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dit is bootstrap</h1>
+        <h2>Hieronder begint de grid</h2>
+        <!-- Eerste rij van de grid -->
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Inhoud van de kolom -->
+                <div class="groen">
+                    Dit is de kolom links
+                    <br>
+                    <img class="img-fluid" src="img/puppy.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="rood">
+                    Dit is de kolom midden
+                    <br>
+                    <img class="img-fluid" src="img/puppy.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="groen">
+                    Dit is de kolom midden-rechts
+                    <br>
+                    <img class="img-fluid" src="img/puppy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
