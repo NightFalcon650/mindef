@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap voorbeeld</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .groen {
+            background-color: lightgreen;
+        }
+
+        .rood {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dit is bootstrap</h1>
+        <h2>Hieronder begint de grid</h2>
+        <!-- Eerste rij van de grid -->
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Inhoud van de kolom -->
+                <div class="groen">
+                    Dit is de kolom links
+                    <br>
+                    <img class="img-fluid" src="img/puppy.jpg" alt="">
+                </div>
+            </div>
+            <!-- Start middelste kolom -->
+            <div class="col-md-8">
+                <div class="jumbotron">
+                    <h1>Welkom bij de training HTML, CSS en JavaScript</h1>
+                    <p>
+                        We leren hier van alles over webdevelopment
+                    </p>
+                    <a href="#" class="btn btn-primary">Meer info</a>
+
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, consequatur ad, odit earum minima asperiores, pariatur
+                    dolor voluptas iure dignissimos ut? Nobis qui hic cumque porro modi voluptatibus ratione culpa?
+                </p>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/puppy.jpg" alt="First Puppy">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/puppy2.jpg" alt="Second PUppy">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/puppy3.jpg" alt="Third dog">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Vorige</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Volgende</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Start kolom 3 -->
+            <div class="col-md-2">
+                <div class="groen">
+                    Dit is de kolom midden-rechts
+                    <br>
+                    <img class="img-fluid" src="img/puppy.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Start van de row met footer -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <p class="text-center">
+                    Copyright (C) 2018
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts voor de werking van de caroussel -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
