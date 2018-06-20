@@ -9,10 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Spirax|Shrikhand|Lato" rel="stylesheet">
 
     <style>
+        /* Eigen font-definitie maken, verwijzen naar lokale lettertypen */
+
         @font-face {
             font-family: Roboto;
             src: url('fonts/Roboto-Regular.ttf');
         }
+
+        /* Verwijzen naar lettertype online bij Google Fonts */
 
         body {
             font-family: Spirax, sans-serif;
@@ -22,9 +26,13 @@
             font-family: Shrikhand, sans-serif;
         }
 
+        /* Lato, een meer leesbaar lettertype voor alineateksten */
+
         p {
             font-family: Lato, sans-serif;
         }
+
+        /* Klasse voor een lokaal font, zodat het ook in een intranet gebruikt kan worden */
 
         .roboto {
             font-family: Roboto, sans-serif;
@@ -46,7 +54,11 @@
     </p>
 
     <p class="roboto">
-        Dit is het font Roboto. Het is ingevoegd in de map /fonts.
+        Dit is het font Roboto. Het is ingevoegd in de map /fonts. Het is daarmee OOK beschikbaar op een intranet, als er geen toegang
+        is tot het publieke internet.
+    </p>
+    <p>
+        Aanbevolen voor mindef-sites.
     </p>
 </body>
 
