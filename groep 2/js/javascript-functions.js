@@ -12,8 +12,8 @@ function toonPrompt() {
 	var a = parseInt(prompt('geef getal 1'));
 	var b = parseInt(prompt('geef getal 2'));
 
-	document.getElementById('btnOptellen').innerHTML = optellen(a, b);
+	document.getElementById('divResult').innerHTML = optellen(a, b);
 }
 
 //3. Functie voor de knop btnOptellen
-// document.getElementById('btnOptellen').addEventListener('click', toonPrompt);
+document.getElementById('btnOptellen').addEventListener('click', toonPrompt);
