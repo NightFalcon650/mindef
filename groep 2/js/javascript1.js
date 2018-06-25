@@ -14,4 +14,13 @@ document.getElementById('resultLeeftijd').innerHTML = leeftijd;
 // Voorbeeld: twee variabelen bij elkaar optellen.
 var getal1 = 10;
 var getal2 = 20;
-alert(getal1 + getal2);
+var uitkomst = getal1 + getal2;
+var tekst = '<h2>' + uitkomst + '</h2>';
+tekst += ' is de uitkomst!!!';
+
+document.getElementById('uitkomst').innerHTML = tekst;
+
+// Voorbeeld:: maken van een object - dit komt later nogmaals aan de orde.
+// Het 'object' cursist. Wordt gegroepeerd met accolades {...}
+var cursist = { naam: 'Theo', email: 'theo@theo.nl' };
+console.log(cursist.naam);
