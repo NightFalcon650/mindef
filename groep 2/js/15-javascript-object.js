@@ -35,13 +35,18 @@ var auto = {
 var voertuigArray = [];
 voertuigArray.push(vrachtwagen);
 voertuigArray.push(auto);
+// OF:
+// var voertuigArray =[vrachtwagen, auto]
+
+// 3a.  Even in de console schrijven ter controle
 console.log(voertuigArray);
 
 // 4. Loop over de array en toon alle objecten in de UI
 for (var i = 0; i < voertuigArray.length; i++) {
 	var listItem =
 		'<li class="list-group-item"><h2>' + voertuigArray[i].merk + '</h2>';
-	listItem += voertuigArray[i].prijs + ',' + voertuigArray[i].accessoires;
+	listItem +=
+		voertuigArray[i].prijs + ',' + voertuigArray[i].accessoires.toString();
 	listItem += '</li>';
 	document.getElementById('lijstVoertuigen').innerHTML += listItem;
 }

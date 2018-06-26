@@ -1,0 +1,16 @@
+span,
+.merk {
+	font-size: 48px;
+	display: block;
+}
+.prijs {
+	font-size: 24px;
+}
+img {
+	max-width: 300px;
+}
+
+.btn-primary {
+	background-color: cadetblue;
+	color: whitesmoke;
+}
