@@ -7,25 +7,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Formulieren</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        #divProvincie {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <h1>HTML Formulieren</h1>
         <!-- Alle 'officiele' formulieren beginnen met een <form>...</form> tag -->
+        <p>
+            Velden met een * zijn verplicht
+        </p>
         <form action="https://www.kassenaar.com/hcj/testform.asp" method="POST">
-            <label for="voornaam"> Voornaam:</label>
-            <input type="text" tabindex="10" name="voornaam" id="voornaam" placeholder="Wat is je voornaam" class="form-control-lg">
+            <label for="voornaam"> Voornaam *:</label>
+            <input type="text" name="voornaam" required id="voornaam" placeholder="Wat is je voornaam" class="form-control-lg">
             <br>
-            <label for="achternaam">Achternaam:</label>
-            <input type="text" tabindex="20" name="achternaam" id="achternaam" placeholder="Wat is je achternaam" class="form-control-lg">
+            <label for="achternaam">Achternaam *:</label>
+            <input type="text" name="achternaam" required id="achternaam" placeholder="Wat is je achternaam" class="form-control-lg">
             <br>
-            <label for="nieuwsbrief">Nieuwsbrief:</label>
-            <input type="checkbox" tabindex="30" name="nieuwsbrief" id="nieuwsbrief" class="form-control-lg">
+            <label for="leeftijd">Leeftijd:</label>
+            <input type="number" name="leeftijd" min="18" max="67" id="leeftijd" placeholder="leeftijd" class="form-control-lg">
+            <br>
+            <h2>Radio buttons / keuzerondjes</h2>
+            <label for="geslacht">geslacht</label>
+            <br>
+            <input type="radio" name="radioGeslacht" value="man">man
+            <br>
+            <input type="radio" name="radioGeslacht" value="vrouw">vrouw
+            <br>
+            <input type="radio" name="radioGeslacht" value="weetniet">onbekend
+            <br>
+            <h2>Favoriete gerecht</h2>
+            <label for="gerecht">geslacht</label>
+            <br>
+            <input type="radio" name="gerecht" value="pizza" checked>pizza
+            <br>
+            <input type="radio" name="gerecht" value="patat">patat
+            <br>
+            <input type="radio" name="gerecht" value="pasta">pasta
+            <br>
+
+            <h2>Drop down menu / uitrol menu</h2>
+            <select name="provincies" id="provincies">
+                <option value="-1" disabled selected>Maak een keuze </option>
+                <option value="GR">Grunnn</option>
+                <option value="FR">Friesland</option>
+                <option value="DR">Drenthe</option>
+                <option value="OV">Overijssel</option>
+                <option value="GLD">Gelderland</option>
+                <option value="other">Overig</option>
+            </select>
+            <div id="divProvincie">
+                <label for="overigeProvincie">Andere provincie:</label>
+                <input type="text" name="overigeProvincie" id="overigeProvincie" placeholder="vul provincie in...." id="overigeProvincie">
+            </div>
+
+            <h2>keuzemenu naar verschillende sites. Ga naar:</h2>
+            <select name="sites" id="sites">
+                <option value="http://www.google.nl">Google</option>
+                <option value="http://www.microsoft.com">Microsuf</option>
+                <option value="http://www.apple.com" selected>Fruit</option>
+
+            </select>
+            <div>
+                <label for="voorwaarden">Ik accepteer de voorwaarden *:</label>
+                <input type="checkbox" name="voorwaarden" required id="voorwaarden" class="form-control-lg">
+            </div>
+            <hr>
             <input type="submit" name="btnSubmit" id="btnSubmit" class="btn btn-primary" value="Verzenden">
             <input type="reset" name="btnReset" id="btnReset" class="btn btn-danger" value="Leegmaken">
         </form>
+
+
+
+
+
+
     </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/20-html-formulieren.js"></script>
 </body>
 
 </html>
