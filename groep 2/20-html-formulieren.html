@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Formulieren</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>HTML Formulieren</h1>
+        <!-- Alle 'officiele' formulieren beginnen met een <form>...</form> tag -->
+        <form action="https://www.kassenaar.com/hcj/testform.asp" method="POST">
+            <label for="voornaam"> Voornaam:</label>
+            <input type="text" tabindex="10" name="voornaam" id="voornaam" placeholder="Wat is je voornaam" class="form-control-lg">
+            <br>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" tabindex="20" name="achternaam" id="achternaam" placeholder="Wat is je achternaam" class="form-control-lg">
+            <br>
+            <label for="nieuwsbrief">Nieuwsbrief:</label>
+            <input type="checkbox" tabindex="30" name="nieuwsbrief" id="nieuwsbrief" class="form-control-lg">
+            <input type="submit" name="btnSubmit" id="btnSubmit" class="btn btn-primary" value="Verzenden">
+            <input type="reset" name="btnReset" id="btnReset" class="btn btn-danger" value="Leegmaken">
+        </form>
+    </div>
+</body>
+
+</html>
