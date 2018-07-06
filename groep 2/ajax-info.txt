@@ -1,0 +1,7 @@
+var url = 'http://www.omdbapi.com/?apikey=f1f56c8e&s=';
+
+De webserver die ik als demo gebruikte is Cesanta Mongoose,
+
+gratis te downloaden vanaf https://cesanta.com/binary.html 
+
+(maar er zijn allerlei alternatieven, xampp, phoenix, IIS, Apache, etc)
